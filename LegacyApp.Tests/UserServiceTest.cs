@@ -7,8 +7,8 @@ namespace LegacyApp.Tests;
 
 [TestSubject(typeof(UserService))]
 public class UserServiceTest
-//var addResult = userService.AddUser("John", "Doe", "johndoe@gmail.com", DateTime.Parse("1982-03-21"), 1);
 {
+    
     [Fact]
     public void AddUser_Should_Throw_ArgumentException_When_ClientId_Doesnt_Exist()
     {
@@ -62,5 +62,11 @@ public class UserServiceTest
         var addResult = userService.AddUser("", "Doe", "johndoe@gmail.com", DateTime.Parse("1982-03-21"), 1);
         //Assert
         Assert.False(addResult);
+    }
+
+    [Fact]
+    public void METHOD()
+    {
+        
     }
 }
